@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sundaresan — IT Infrastructure, Systems Administration and Network Engineering professional.">
+<title>Sundaresan | IT Infrastructure & Systems Administrator</title>
+<style>
+:root{--navy:#142b4a;--blue:#2463eb;--ink:#172338;--muted:#64748b;--line:#e4eaf2;--bg:#f7f9fc;--white:#fff;--pale:#edf4ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.03em;color:var(--navy);font-size:1.15rem}.brand span{color:var(--blue)}
+nav{display:flex;gap:24px;font-size:.9rem;color:#40516a}nav a:hover{color:var(--blue)}
+.hero{padding:86px 0 74px;background:linear-gradient(120deg,#fff 0%,#f3f7ff 100%);border-bottom:1px solid var(--line)}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--pale);color:#1d4ed8;border:1px solid #dbe8ff;padding:6px 12px;border-radius:30px;font-size:.8rem;font-weight:700}
+.dot{width:7px;height:7px;border-radius:50%;background:#16a36a}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.06;letter-spacing:-.055em;color:var(--navy);margin:22px 0 18px;max-width:850px}
+.lead{font-size:1.16rem;color:#53647b;max-width:760px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:9px;font-weight:700;font-size:.93rem;border:1px solid var(--blue);background:var(--blue);color:#fff}
+.btn.secondary{background:#fff;color:var(--navy);border-color:#cbd5e1}
+.meta{display:flex;flex-wrap:wrap;gap:20px;margin-top:28px;color:var(--muted);font-size:.9rem}
+section{padding:70px 0}.section-head{margin-bottom:28px}.kicker{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem}
+h2{color:var(--navy);font-size:2rem;letter-spacing:-.035em;margin:5px 0 8px}.section-intro{color:var(--muted);max-width:740px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:15px;padding:23px;box-shadow:0 5px 20px rgba(20,43,74,.035)}
+.card h3{margin:0 0 8px;color:var(--navy);font-size:1.06rem}.card p{margin:0;color:var(--muted);font-size:.94rem}
+.icon{width:38px;height:38px;border-radius:10px;background:var(--pale);display:grid;place-items:center;color:var(--blue);font-weight:800;margin-bottom:15px}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.chip{background:#fff;border:1px solid var(--line);padding:7px 11px;border-radius:7px;font-size:.86rem;color:#40516a}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px}.project .tag{font-size:.75rem;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.project h3{margin:8px 0;color:var(--navy)}.project p{color:var(--muted);margin:0;font-size:.94rem}
+.two{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:start}
+ul.clean{padding-left:19px;margin:10px 0 0;color:var(--muted)}ul.clean li{margin:7px 0}
+.callout{background:var(--navy);color:#fff;border-radius:18px;padding:30px}.callout h2{color:#fff}.callout p{color:#d7e2f1}.callout .btn{background:#fff;color:var(--navy);border-color:#fff}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem;background:#fff}
+.contact-list{display:grid;gap:10px;margin-top:16px;color:#40516a}.note{font-size:.82rem;color:#8390a3;margin-top:18px}
+@media(max-width:800px){nav{gap:12px;font-size:.82rem}.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}.nav{height:auto;min-height:65px;align-items:flex-start;padding:15px 0;gap:12px;flex-direction:column}nav{flex-wrap:wrap}.hero{padding:60px 0}.grid,.projects{grid-template-columns:1fr}section{padding:54px 0}}
+@media print{header,.hero-actions{display:none}body{background:#fff}.hero,section{padding:28px 0}.card,.project{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">Sundaresan<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#cloud">Cloud</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Open to international opportunities</span>
+    <h1>IT Infrastructure &amp;<br>Systems Administration</h1>
+    <p class="lead">I’m Sundaresan, an IT infrastructure and support professional with 8+ years of experience across systems administration, network operations, server management and technical support. I’m exploring opportunities across Azerbaijan, the UAE and the wider Gulf region.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#contact">Contact me</a>
+      <a class="btn secondary" href="#projects">Explore my work</a>
+    </div>
+    <div class="meta"><span>📍 Based in India</span><span>🌍 Interested in Azerbaijan · UAE · Gulf</span><span>💼 8+ years’ experience</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap two">
+    <div>
+      <div class="section-head"><div class="kicker">About me</div><h2>Reliable infrastructure. Practical problem-solving.</h2></div>
+      <p class="section-intro">My work focuses on keeping IT environments stable, secure and supportable. I have hands-on experience supporting Windows and Linux systems, managing network and firewall environments, troubleshooting end-user issues, and improving operational visibility through monitoring and automation.</p>
+      <p class="section-intro" style="margin-top:14px">I enjoy solving infrastructure problems, documenting solutions and making day-to-day IT operations more efficient. I’m interested in contributing to an international IT team where reliability, security and service quality matter.</p>
+    </div>
+    <div class="card">
+      <h3>Professional focus</h3>
+      <ul class="clean">
+        <li>IT infrastructure and systems administration</li>
+        <li>Windows and Linux server operations</li>
+        <li>Network, firewall and VPN administration</li>
+        <li>IT support, incident troubleshooting and user services</li>
+        <li>Security monitoring and infrastructure automation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:#f0f4fa">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Technical capabilities</div><h2>Skills &amp; technologies</h2><p class="section-intro">A practical toolkit built through infrastructure operations, implementation and troubleshooting.</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">OS</div><h3>Systems administration</h3><p>Server deployment, maintenance, troubleshooting and service management.</p><div class="skills"><span class="chip">Windows Server</span><span class="chip">Ubuntu</span><span class="chip">Linux</span><span class="chip">Active Directory</span><span class="chip">GPO</span></div></div>
+      <div class="card"><div class="icon">NET</div><h3>Networking &amp; security</h3><p>Network operations, firewall administration and connectivity troubleshooting.</p><div class="skills"><span class="chip">FortiGate</span><span class="chip">VPN</span><span class="chip">VLAN</span><span class="chip">DNS</span><span class="chip">DHCP</span></div></div>
+      <div class="card"><div class="icon">SEC</div><h3>Monitoring &amp; security</h3><p>Infrastructure visibility, log monitoring and security hardening activities.</p><div class="skills"><span class="chip">Wazuh</span><span class="chip">VAPT tools</span><span class="chip">Nmap</span><span class="chip">Nikto</span></div></div>
+      <div class="card"><div class="icon">AUT</div><h3>Automation &amp; DevOps</h3><p>Repeatable operational tasks and application deployment support.</p><div class="skills"><span class="chip">Git</span><span class="chip">CI/CD</span><span class="chip">Jenkins</span><span class="chip">Ansible</span><span class="chip">Docker</span><span class="chip">Terraform</span><span class="chip">Python scripting</span></div></div>
+      <div class="card"><div class="icon">GIT</div><h3>Version control &amp; CI/CD</h3><p>Source-code version control and automated build, test and deployment workflow concepts.</p><div class="skills"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">CI/CD pipelines</span><span class="chip">Jenkins</span><span class="chip">Build &amp; deployment automation</span></div></div>
+      <div class="card"><div class="icon">WEB</div><h3>Web &amp; application infrastructure</h3><p>Web server configuration, reverse proxy and application hosting support.</p><div class="skills"><span class="chip">Nginx</span><span class="chip">Apache</span><span class="chip">Tomcat</span><span class="chip">Certbot / SSL</span></div></div>
+      <div class="card"><div class="icon">M365</div><h3>End-user &amp; cloud services</h3><p>User support, endpoint administration and collaboration platform support.</p><div class="skills"><span class="chip">Microsoft 365</span><span class="chip">Intune</span><span class="chip">SharePoint</span><span class="chip">RMM</span><span class="chip">IT support</span></div></div>
+      <div class="card"><div class="icon">CLD</div><h3>Cloud platforms</h3><p>Cloud compute, networking, identity, storage, monitoring and infrastructure deployment concepts.</p><div class="skills"><span class="chip">Microsoft Azure</span><span class="chip">Azure Virtual Machines</span><span class="chip">Azure VNet</span><span class="chip">AWS EC2</span><span class="chip">AWS Lambda</span><span class="chip">AWS S3</span><span class="chip">AWS IAM</span><span class="chip">AWS VPC</span><span class="chip">CloudWatch</span><span class="chip">Load Balancing</span></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="cloud">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Cloud infrastructure</div>
+      <h2>Azure &amp; AWS technologies</h2>
+      <p class="section-intro">Cloud infrastructure areas relevant to server administration, network operations and infrastructure support, including compute, networking, access control, automation and monitoring.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">AZ</div>
+        <h3>Microsoft Azure</h3>
+        <p>Virtual machine administration concepts, cloud networking, access security, storage and operational monitoring.</p>
+        <div class="skills"><span class="chip">Azure Virtual Machines</span><span class="chip">Virtual Networks (VNet)</span><span class="chip">Network Security Groups</span><span class="chip">Storage Accounts</span><span class="chip">Azure Monitor</span><span class="chip">Load Balancer</span></div>
+      </article>
+      <article class="card">
+        <div class="icon">AWS</div>
+        <h3>Amazon Web Services</h3>
+        <p>Cloud compute and networking services, identity and access management, object storage and monitoring.</p>
+        <div class="skills"><span class="chip">EC2</span><span class="chip">S3</span><span class="chip">IAM</span><span class="chip">VPC</span><span class="chip">Security Groups</span><span class="chip">CloudWatch</span></div>
+      </article>
+      <article class="card">
+        <div class="icon">LMB</div>
+        <h3>Serverless &amp; load balancing</h3>
+        <p>Understanding of event-driven compute and traffic distribution patterns for highly available application environments.</p>
+        <div class="skills"><span class="chip">AWS Lambda</span><span class="chip">Elastic Load Balancing</span><span class="chip">Application Load Balancer</span><span class="chip">Network Load Balancer</span><span class="chip">Health Checks</span></div>
+      </article>
+    </div>
+    <p class="note">Cloud service names are included as technology areas. Add only the services you have personally configured or used to your hands-on experience claims; practical labs and production experience should be described separately.</p>
+  </div>
+</section>
+\n<section id="projects">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Selected work</div><h2>Projects &amp; practical experience</h2><p class="section-intro">Examples of infrastructure work and technical initiatives. Project details can be expanded with environment diagrams, screenshots and measurable outcomes.</p></div>
+    <div class="projects">
+      <article class="project"><div class="tag">Security monitoring</div><h3>Wazuh security monitoring</h3><p>Implemented and maintained Wazuh manager and indexer components, reviewed service health and tuned indexer memory settings. Worked with security monitoring as part of infrastructure visibility.</p></article>
+      <article class="project"><div class="tag">Automation</div><h3>Ansible server health reporting</h3><p>Built Linux and Windows monitoring playbooks to collect host details such as operating system, CPU, memory, disk usage, load and uptime, producing structured daily health reports.</p></article>
+      <article class="project"><div class="tag">Network operations</div><h3>Firewall and network administration</h3><p>Worked with FortiGate firewall environments, VPN and network connectivity troubleshooting, DHCP scopes, VLAN-related tasks and access administration.</p></article>
+      <article class="project"><div class="tag">Messaging infrastructure</div><h3>Mailcow email platform</h3><p>Set up a Docker-based Mailcow environment and worked through mail services, DNS records, MX, SPF and DKIM configuration for email authentication.</p></article>
+      <article class="project"><div class="tag">Web infrastructure</div><h3>Nginx, SSL and application hosting</h3><p>Configured Nginx and web application hosting environments, worked with reverse proxy settings, TLS certificates and troubleshooting for Tomcat-hosted applications.</p></article>
+      <article class="project"><div class="tag">Security hardening</div><h3>Vulnerability assessment &amp; hardening</h3><p>Performed infrastructure and web security checks using tools such as Nmap, Nikto and HTTP security assessments, then worked on improving server configuration and security headers.</p></article>
+      <article class="project"><div class="tag">DevOps &amp; automation</div><h3>Git version control &amp; CI/CD workflows</h3><p>Use Git for source-code version control and work with CI/CD concepts and Jenkins-based automation to support repeatable build and deployment workflows. Add repository links or pipeline screenshots to demonstrate specific implementations.</p></article>
+      <article class="project"><div class="tag">Cloud infrastructure</div><h3>Azure &amp; AWS cloud infrastructure labs</h3><p>Cloud learning and implementation areas covering Azure Virtual Machines, Azure networking and monitoring, AWS EC2, VPC, IAM, S3, Lambda and load-balancing concepts. This section can be updated with lab diagrams, screenshots and verified deployment details as projects are completed.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="background:#f0f4fa">
+  <div class="wrap two">
+    <div>
+      <div class="section-head"><div class="kicker">Experience</div><h2>IT operations across the stack</h2></div>
+      <p class="section-intro">My professional background spans system administration, infrastructure support, network operations and end-user services. I have supported business-critical systems and worked across server, endpoint, network and security-related tasks.</p>
+      <ul class="clean">
+        <li>Windows and Linux server administration and troubleshooting</li>
+        <li>Network and firewall administration, including FortiGate environments</li>
+        <li>Endpoint and user administration, Microsoft 365 and Intune-related support</li>
+        <li>Monitoring, automation, backup and operational documentation</li>
+        <li>Application hosting support and infrastructure maintenance</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Roles of interest</h3>
+      <div class="skills"><span class="chip">IT Infrastructure Engineer</span><span class="chip">System Administrator</span><span class="chip">Network Engineer</span><span class="chip">L2 IT Support Engineer</span><span class="chip">Infrastructure Security Engineer</span></div>
+      <p style="margin-top:18px">Preferred markets: Azerbaijan, UAE and the Gulf region.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="callout">
+      <div class="kicker" style="color:#a9c7ff">Let’s connect</div>
+      <h2>Open to the next opportunity.</h2>
+      <p>If you’re recruiting for IT infrastructure, systems administration, network engineering or technical support roles in Azerbaijan, the UAE or the Gulf region, I’d be glad to discuss how my experience could support your team.</p>
+      <div class="hero-actions">
+        <!-- Replace the placeholders below with your real contact details before publishing. -->
+        <a class="btn" href="mailto:sundaresankpillai1993@gmail.com?subject=IT%20Opportunity%20-%20Sundaresan">Email me</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/sundaresan-k-7a3a82227" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+      <div class="contact-list">
+        <span>Email: <a href="mailto:sundaresankpillai1993@gmail.com">sundaresankpillai1993@gmail.com</a></span>
+        <span>Phone / WhatsApp: Available upon request</span>
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/sundaresan-k-7a3a82227" target="_blank" rel="noopener">linkedin.com/in/sundaresan-k-7a3a82227</a></span>
+      </div>
+    </div>
+    <p class="note">Portfolio draft: Please verify every skill and project description before sharing with employers. Do not publish confidential company, client, server or network information.</p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Sundaresan · IT Infrastructure &amp; Systems Administration</div></footer>
+</body>
+</html>
